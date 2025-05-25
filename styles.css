@@ -1,0 +1,120 @@
+/* General Styles */
+body {
+	font-family: Arial, sans-serif;
+	margin: 0;
+	padding: 0;
+	background-color: #f4f4f9;
+	color: #333;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	height: 100vh;
+}
+
+/* Container */
+#todoAppContainer {
+	background: #fff;
+	border-radius: 8px;
+	box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+	padding: 20px;
+	width: 400px;
+	max-width: 90%;
+}
+li.done span {
+	text-decoration: line-through;
+	color: #999;
+}
+
+/* Title */
+#todoAppContainer h1 {
+	font-size: 24px;
+	margin-bottom: 20px;
+	text-align: center;
+	color: #4a90e2;
+}
+
+/* Input Field */
+#todoInput {
+	width: calc(100% - 20px);
+	padding: 10px;
+	margin-bottom: 10px;
+	border: 1px solid #ddd;
+	border-radius: 4px;
+	font-size: 16px;
+}
+.InputEdit {
+	width: calc(100% - 20px);
+	padding: 10px;
+	border: 1px solid #ddd;
+	border-radius: 4px;
+	font-size: 16px;
+}
+
+/* Add Button */
+#todoAppContainer button {
+	background-color: #4a90e2;
+	color: #fff;
+	border: none;
+	padding: 10px 15px;
+	border-radius: 4px;
+	cursor: pointer;
+	font-size: 16px;
+	margin-bottom: 20px;
+}
+
+#todoAppContainer button:hover {
+	background-color: #357ab8;
+}
+
+/* Todo List */
+#todoList {
+	list-style: none;
+	padding: 0;
+	margin: 0;
+}
+
+#todoList li {
+	display: flex;
+	align-items: center;
+	background: #f9f9f9;
+	padding: 10px;
+	margin-bottom: 10px;
+	border-radius: 4px;
+	border: 1px solid #ddd;
+}
+li span {
+	margin-right: auto;
+}
+
+/* Buttons inside Todo List */
+#todoList li button {
+	background-color: #28a745;
+	color: #fff;
+	border: none;
+	padding: 5px 10px;
+	border-radius: 4px;
+	cursor: pointer;
+	font-size: 14px;
+	margin-left: 5px;
+	margin-bottom: 0;
+}
+
+#todoList li button:hover {
+	background-color: #45a049;
+}
+
+#todoList li button:nth-child(3) {
+	background-color: #f4a261;
+}
+
+#todoList li button:nth-child(4) {
+	background-color: #e63946;
+}
+
+#todoList li button:nth-child(3):hover {
+	background-color: #e76f51;
+}
+
+#todoList li button:nth-child(4):hover {
+	background-color: #d62839;
+}
